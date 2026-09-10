@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interação Humano-computador</title>
+        <link rel="stylesheet" href="css/paginasSec.css">
+    </head>
+    <body>
+        <header>
+            <a id="btnVoltar" href="index.html">
+                <img src="img/icons8-voltar-50.png" alt="Ícone de Voltar">
+                <span>PÁGINA PRINCIPAL</span>
+            </a>
+            
+            <nav>
+                <a href="#resumo">RESUMO</a>
+                <a href="#definicao">DEFINIÇÃO</a>
+                <a href="#principios">PRINCÍPIOS</a>
+                <a href="#mudancas">MUDANÇAS</a>
+            </nav>
+        </header>
+        <main>
+            <section id="telaInicial">
+
+                <h2>Conheça a</h2>
+                <h1>Interação Humano-computador</h1>
+                <p>
+                    Se você é desenvolvedor, designer ou trabalha com algum tipo de interface, 
+                    esse tópico é <strong>imprescindível</strong>. Clique em "Iniciar a leitura" para 
+                    enriquecer seu repertório!
+                </p>
+                <a id="btnLer" href="#resumo">
+                    <img src="img/icons8-livro-aberto-30.png" alt="Ícone Livro Aberto">
+                    <span>Iniciar a leitura</span>
+                </a>
+
+            </section>
+            <section id="resumo">
+
+                <h3>Resumo</h3>
+                <p class="paragrafo">
+                    A Interação Humano-computador é caracterizada pelo seu caráter multidisciplinar, que
+                    engloba conceitos como psicologia, design, engenharia e ciências da computação. Sua 
+                    evolução envolveu avanço o design de interfaces, transformando-as em mais usáveis, 
+                    acessíveis, consistentes, por meio dos estudos da cognição humana. Isso foi importante 
+                    porque contribuiu na criação de designs que satisfazem os usuários e facilitam no 
+                    dia-a-dia dos diferentes tipos de usuários.
+                </p>
+
+            </section>
+            <section id="definicao">
+
+                <div class="caixaH3">
+                    <img src="img/icons8-conceito-48.png" alt="">
+                    <h3>Definição</h3>
+                </div>
+                <div>
+
+                    <div class="caixaP">
+                        <p class="paragrafo">
+                            É o processo de interação entre o ser humano e a máquina, podendo alterar conforme o 
+                            contexto de uso, incluindo tempo, ambiente físico e sociocultural. É tudo aquilo que 
+                            envolve o ser humano e um sistema computacional para a solução de um problema.
+                        </p>
+                        <p class="paragrafo">
+                            Nos dias atuais, tecnologias novas surgem baseadas nos conceitos IHC e se olharmos para trás,
+                            outras já mudaram a forma que as pessoas interagem ou se comunicam. Como por exemplo: as redes 
+                            sociais, tendo em vista que antes delas a perspectiva e ideia do que era comunicação se 
+                            dava pelo encontro pessoal, telefonemas ou cartas. Por isso, o IHC busca responder perguntas
+                            posteriores a criação de um sistema: "O que um sitema interativo deve permitir fazer?", "O que 
+                            o sistema de fato faz?", "Como ele é utilizado?", "Quais componentes as pessoas usam para inserir
+                            ou buscar uma informação?". 
+                        </p>
+                        <p class="paragrafo">
+                            Esse estudo sobre interface, lógica e dados, busca fidelizar o cliente, evitar treinamento, mais 
+                            produtividade do usuário, menos erros, menos custos de suporte, entre outros.
+                        </p>
+                    </div>
+                    <img class="img" src="img/f80326bb902d5811b933c61e80d3b67f.jpg" alt="Imagem mulher interagindo com computador">                
+                    
+                </div>
+            </section>
+            <section id="principios">
+                <div class="caixaH3">
+                    <img src="img/icons8-funcionalidades-extra-48.png" alt="">
+                    <h3>Princípios</h3>
+                    <p> | Clique nos cartões para ler mais</p>
+                </div>
+                <div id="caixaCards">
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Consistência</h4>
+                            <p class="resumo">Garanta que elementos semelhantes sejam representados de formas parecidas</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Feedback</h4>
+                            <p class="resumo">Informe os usuários sobre os resultados de suas ações</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Visibilidade</h4>
+                            <p class="resumo">Facilite o entendimento e visibilidade do estado do sistema para os usuários</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Recuperação de erros</h4>
+                            <p class="resumo">Facilite apagar ação e recuperação de erros sem consequências significativas</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Restrição</h4>
+                            <p class="resumo">Limite a gama de ações possíveis em uma interface para evitar ações indesejadas</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Aprendizado</h4>
+                            <p class="resumo">Guie o usuário ensinando como navegar ou usar rapidamente a aplicação</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Simplicidade</h4>
+                            <p class="resumo">Evite distrações por meio de um design minimalista</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Modelos Mentais</h4>
+                            <p class="resumo">Alinhe suas interfaces com experiências reais do usuário</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Affordance</h4>
+                            <p class="resumo">Use recursos intuitivos para garantir clareza aos usuários</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section id="mudancas">
+                <div class="caixaH3">
+                    <img src="img/icons8-circuito-30.png" alt="">
+                    <h3>Mudanças</h3>
+                    <div class="caixaBtn">
+                        <button class="btnNext" onclick="swipeLeft()">Anterior</button>
+                        <button class="btnNext" onclick="swipeRight()">Próximo</button>
+                    </div>
+                </div>
+                <div id="caixaDivisor">
+                    <div id="divisor"></div>
+                    <div id="divMudancas">
+                        <div class="caixaImg">
+                            <img id="imgMudancas" class="imgMudancas" src="img/eniac1.jpg">
+                        </div>
+                        <div class="caixaTexto">
+                            <h4 id="tituloMudancas">Década de 50</h4>
+                            <p id="textoMudancas">
+                                Nessa geração, os computadores funcionavam por meio de circuitos e válvulas eletrônicas, consumindo muita energia. 
+                                O computador ao lado foi um desses, chamado ENIAC. Ele exigia profissonais muito expeientes para manuseá-los, sem interfaces.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <a href="#telaInicial" id="voltarTopo">Voltar para o topo</a>
+        </main>
+    </body>
+    <script src="js/IHC.js"></script>
+</html>

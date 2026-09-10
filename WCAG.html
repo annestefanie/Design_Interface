@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WCAG</title>
+        <link rel="stylesheet" href="css/paginasSec.css">
+    </head>
+    <body>
+        <header>
+            <a id="btnVoltar" href="index.html">
+                <img src="img/icons8-voltar-50.png" alt="Ícone de Voltar">
+                <span>PÁGINA PRINCIPAL</span>
+            </a>
+            
+            <nav>
+                <a href="#resumo">RESUMO</a>
+                <a href="#definicao">DEFINIÇÃO</a>
+                <a href="#principios">PRINCÍPIOS</a>
+            </nav>
+        </header>
+        <main>
+            <section id="telaInicial">
+
+                <h2>Conheça o</h2>
+                <h1>Guia de Acessibildade Web (WCAG)</h1>
+                <p>
+                    A tecnologia está nos dias de todo mundo e é necessário não deixar ninguém de fora.
+                    É isso que o WCAG vai nos apresentar, uma forma de ampliar uma página web para todos
+                    com todos os tipos de limitações. Para saber mais clique em "iniciar leitura".
+                </p>
+                <a id="btnLer" href="#resumo">
+                    <img src="img/icons8-livro-aberto-30.png" alt="Ícone Livro Aberto">
+                    <span>Iniciar a leitura</span>
+                </a>
+
+            </section>
+            <section id="resumo">
+
+                <h3>Resumo</h3>
+                <p class="paragrafo">
+                    A acessibilidade web guiada pelas diretrizes WCAG, garante que os sites e sistemas sejam 
+                    utilizáveis por todas as pessoas com deficiências visuais, motoras, auditivas ou cognitivas.
+                    Ela se baseia em quatro princípios fundamentais: informação perceptível por diferentes sentidos, 
+                    operável por diferentes dispositivos, compreensível em sua navegação e conteúdo, robusta o bastante
+                    para funcionar com diversas tecnologias assistivas. 
+                </p>
+
+            </section>
+            <section id="definicao">
+
+                <div class="caixaH3">
+                    <img src="img/icons8-conceito-48.png" alt="">
+                    <h3>Definição</h3>
+                </div>
+
+                <div class="caixaP">
+                    <p class="paragrafo">
+                        WCAG significa Web Content Accessibility Guidelines e é um guia de recomendações de acessibilidade
+                        para conteúdo da Web, com são diretrizes que explicam como tornar o conteúdo no ambiente online acessível a todas as pessoas. 
+                        Essas diretrizes foram desenvolvidas pela w3c que tem como objetivo oferecer só um padrão de acessibilidade para atender as 
+                        necessidades de orgaizações de todos os tipos, governos e até empresas.     
+                    </p>
+                </div>
+                <h3 style="color: #25533f">
+                    Paleta de cores
+                </h3>
+                <p class="paragrafo">
+                    A psicologia das cores estuda como a paleta de cores utilizada em um projeto pode influenciar o comportamento do cérebro humano. 
+                    A escolha certa das cores é importante, pois transmite sensações que impactam as decisões dos usuários. No design de interfaces, 
+                    essa escolha depende do domínio do negócio e do contexto cultural e social; ou seja, não há um padrão fixo para as cores que podem
+                    ser utilizadas. 
+                </p>
+                <p class="paragrafo">
+                    Por exemplo, em sites voltados para tecnologia, é comum o uso de tons de azul-escuro, roxo, preto e cinza, pois comunicam modernidade,
+                    sofisticação e inovação. Em redes de alimentação, é comum o uso de vermelho, laranja e amarelo, pois estudos confirmam que essas cores 
+                    estimulam o apetite, além de chamar a atenção do cliente. Em sites voltados à saúde, a tonalidade predominante é azul-claro, verde e 
+                    branco, pois transmite limpeza e remete ao ambiente hospitalar. Sites de cosméticos priorizam rosa, bege e tons pastel, pois provocam 
+                    sensações de delicadeza, cuidado e calma. Sites de luxo valorizam o preto, dourado e branco, transmitindo elegância e status. 
+                </p>
+                <p class="paragrafo">
+                    Grandes corporações testam variações de cores em elementos decisivos (como botões de checkout) para medir taxas de clique e conversão. 
+                    A escolha precisa respeitar as normas das WCAG, garantindo que o contraste das cores principais funcione para usuários com daltonismo ou
+                    baixa visão.   
+
+                </p>                
+            </section>
+
+            <section id="principios">
+                <div class="caixaH3">
+                    <img src="img/icons8-funcionalidades-extra-48.png" alt="">
+                    <h3>Princípios</h3>
+                    <p> | Clique para ver exemplos</p>
+                </div>
+                <div id="caixaCards">
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Perceptível</h4>
+                            <p class="resumo">Todo conteúdo deve ser identificável facilmente por todos os sentidos dos usuários</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Operacional</h4>
+                            <p class="resumo">A interafce não pode exigir ações que o usuário não consiga operar</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Compreensivo e Robusto</h4>
+                            <p class="resumo">Todas as informações devem ser compreensíveis para qualquer pessoa idepenpendente da idade ou habilidade</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    <a onclick="abrirDiv()">
+                        <div class="cards">
+                            <h4>Robusto</h4>
+                            <p class="resumo">Todo conteúdo deve ser robusto para funcionar com qualquer tecnologia ou dispositivo</p>
+                            <span class="lerSobre">Ler sobre</span>
+                        </div>
+                    </a>
+                    
+                </div>
+            <a href="#telaInicial" id="voltarTopo">Voltar para o topo</a>
+        </main>
+    </body>
+</html>
