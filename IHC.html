@@ -88,63 +88,63 @@
                     <p> | Clique nos cartões para ler mais</p>
                 </div>
                 <div id="caixaCards">
-                    <a onclick="abrirDiv()">
+                    <a onclick="abrirDiv('consistencia', principiosData)">
                         <div class="cards">
                             <h4>Consistência</h4>
                             <p class="resumo">Garanta que elementos semelhantes sejam representados de formas parecidas</p>
                             <span class="lerSobre">Ler sobre</span>
                         </div>
                     </a>
-                    <a onclick="abrirDiv()">
+                    <a onclick="abrirDiv('feedback', principiosData)">
                         <div class="cards">
                             <h4>Feedback</h4>
                             <p class="resumo">Informe os usuários sobre os resultados de suas ações</p>
                             <span class="lerSobre">Ler sobre</span>
                         </div>
                     </a>
-                    <a onclick="abrirDiv()">
+                    <a onclick="abrirDiv('visibilidade', principiosData)">
                         <div class="cards">
                             <h4>Visibilidade</h4>
                             <p class="resumo">Facilite o entendimento e visibilidade do estado do sistema para os usuários</p>
                             <span class="lerSobre">Ler sobre</span>
                         </div>
                     </a>
-                    <a onclick="abrirDiv()">
+                    <a onclick="abrirDiv('recuperacaoDeErros', principiosData)">
                         <div class="cards">
                             <h4>Recuperação de erros</h4>
                             <p class="resumo">Facilite apagar ação e recuperação de erros sem consequências significativas</p>
                             <span class="lerSobre">Ler sobre</span>
                         </div>
                     </a>
-                    <a onclick="abrirDiv()">
+                    <a onclick="abrirDiv('restricao', principiosData)">
                         <div class="cards">
                             <h4>Restrição</h4>
                             <p class="resumo">Limite a gama de ações possíveis em uma interface para evitar ações indesejadas</p>
                             <span class="lerSobre">Ler sobre</span>
                         </div>
                     </a>
-                    <a onclick="abrirDiv()">
+                    <a onclick="abrirDiv('aprendizado', principiosData)">
                         <div class="cards">
                             <h4>Aprendizado</h4>
                             <p class="resumo">Guie o usuário ensinando como navegar ou usar rapidamente a aplicação</p>
                             <span class="lerSobre">Ler sobre</span>
                         </div>
                     </a>
-                    <a onclick="abrirDiv()">
+                    <a onclick="abrirDiv('simplicidade', principiosData)">
                         <div class="cards">
                             <h4>Simplicidade</h4>
                             <p class="resumo">Evite distrações por meio de um design minimalista</p>
                             <span class="lerSobre">Ler sobre</span>
                         </div>
                     </a>
-                    <a onclick="abrirDiv()">
+                    <a onclick="abrirDiv('modelosMentais', principiosData)">
                         <div class="cards">
                             <h4>Modelos Mentais</h4>
                             <p class="resumo">Alinhe suas interfaces com experiências reais do usuário</p>
                             <span class="lerSobre">Ler sobre</span>
                         </div>
                     </a>
-                    <a onclick="abrirDiv()">
+                    <a onclick="abrirDiv('affordance', principiosData)">
                         <div class="cards">
                             <h4>Affordance</h4>
                             <p class="resumo">Use recursos intuitivos para garantir clareza aos usuários</p>
@@ -181,6 +181,14 @@
             
             <a href="#telaInicial" id="voltarTopo">Voltar para o topo</a>
         </main>
+        <div id="overlay"></div>
+        <div id="divPrincipios"class="detalhePainel">
+            <div id="caixaBtn" >
+                <button onclick="fecharDiv()">Fechar</button>
+            </div>
+            <div id="conteudoPrincipio"></div>
+        </div>
     </body>
-    <script src="js/IHC.js"></script>
-</html>
+    <script src="js/main.js"></script>
+    <script src="js/data/IHC.js"></script>
+    </html>
