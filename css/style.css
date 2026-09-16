@@ -7,6 +7,7 @@
     --color-dark-green: #25533f;
     --color-green: #aacc96;
     --color-gray: #ececec;
+    --color-dark-gray: #2e2e2e;
     --color-white: #ffffff;
 }
 :hover{
@@ -51,6 +52,23 @@ a{
 }
 main{
     width: 100%;
+}
+@keyframes reveal-and-unblur {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+div{
+    animation: reveal-and-unblur linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 30%;
 }
 #telaInicial {
     padding: 2rem;
@@ -104,8 +122,6 @@ main{
     
     overflow: hidden;
     width: 30vw;
-    height: 35vh;
-    background-color: var(--color-dark-green);
     border-radius: 10px;
     border: 1px solid var(--color-black);
 }
@@ -134,12 +150,21 @@ main{
 .cards:hover::before{
     opacity: .6;
 }
+#ultimoCard img{
+    opacity: 0;
+}
 #sobre{
-    background-color: var(--color-green);
+    background-color: var(--color-black);
     padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sobre div{
+    max-width: 60%;
 }
 #sobre p{
-    color: var(--color-black);
+    color: var(--color-white);
     font-family: 'Vietnam Pro', sans-serif;
     text-align: justify;
     text-indent: 40px;
@@ -148,11 +173,11 @@ main{
     font-family: 'Cal Sans', sans-serif;
     font-weight: lighter;
     padding-bottom: 1rem;
-    color: var(--color-dark-green);
+    color: var(--color-green);
 }
 footer{
     text-align: center;
-    background-color: var(--color-green);
+    background-color: var(--color-dark-gray);
     width: 100%;
     padding-left: 2rem;
     padding-bottom: 2rem;
@@ -163,8 +188,28 @@ footer img{
     margin-top: 20px;
     max-width: 30px;
 }
-@media (max-width:780px) {
+@media (max-width: 780px) {
     #textBox h1{
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
+    #telaInicial{
+        padding: 0.2rem;
+    }
+    #paginas {
+        padding: 0.5rem;
+    }
+    .cards {
+        flex-direction: row;
+        width: 100%;
+    }
+    .cards img{
+    max-width: 100%;
+    }
+    #ultimoCard{
+        display: none;
+    }
+    #sobre div{
+        min-width: 100%;
+    }
+
 }
