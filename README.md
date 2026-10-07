@@ -13,26 +13,6 @@ A study of Nielsen's 10 Usability Heuristics, the widely used principles for eva
 ### 📁 [Hub_Conceitos_Design_Interface](./Hub_Conceitos_Design_Interface)
 A webpage created for the Interface Development course. It compiles information on the course's most well-known and important concepts, and serves as a space to practice the topics learned along the way.
 
-## Repository Structure
-
-```
-.
-├── Human-Computer_Interaction_Interface/
-├── 10_Heuristicas_de_Usabilidade/
-├── Hub_Conceitos_Design_Interface/
-└── README.md
-```
-
-## How to Use
-
-Clone the repository:
-
-```bash
-git clone https://github.com/annestefanie/Portfolio_Design_Interface.git
-```
-
-Then open the folder of the project you want to explore. For the web-based projects, open the `index.html` file in your browser.
-
 ## About
 
 These projects were created as part of my coursework and reflect my learning journey in interface design, usability and front-end development.
