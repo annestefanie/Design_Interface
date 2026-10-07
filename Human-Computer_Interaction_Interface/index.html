@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação Humano-Computador(IHC)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <a href="#mainSection">Definição</a>
+            <a href="#charact">Características</a>
+            <a href="#evolution">Mudanças</a>
+            <a href="#summary">Resumo</a>
+            <a href="#refs">Referências</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="mainSection">
+            <div id="intro">
+                <div id="homeImg">
+                    <img src="./imagens/interacaoHumanoComputador.webp" alt="">
+                    <p>Venha entender uns dos assuntos <strong>mais importantes</strong> da engenharia de software voltada para o <strong>desenvolvimento de interfaces</strong>.</p>
+                </div>
+            </div>
+            <div id="home">
+                <h1>Interação Humano-Computador (IHC)</h1>
+                <div>
+                    <h2>Definição</h2>
+                    <p>É um campo de estudo que busca se aprofundar nas relações <strong>humano-computador</strong>, focando na criação de interfaces agradáveis e intuitivas para o usuário. O estudo inclui diversas áreas como psicologia, design e engenharia e tecnologia para melhorar a experiência digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="charact">
+            <h2>Características</h2>
+            <p></p>
+            <ul>
+                <li>Estudo das características humanas (memória, visão, percepção, atenção, aprendizado, linguagem, etc) em busca de <em>maximizar a experiência do usuário</em> para a melhor possível, baseada nos seguintes princípios: </li>
+                <ol>
+                    <li>Usabilidade;</li>
+                    <li>Acessibilidade;</li>
+                    <li>Comunicabilidade;</li>
+                    <li>Segurança e confiabilidade;</li>
+                    <li>Eficiência cognitiva;</li>
+                    <li>Estética e design.</li>
+                </ol>
+            </ul>
+        </div>
+        
+        <div id="evolution">
+            <h2>Mudanças</h2>
+            <div>
+                <div class="btnHeight">
+                    <button onclick="swipeLeft()" id="btnLeft"><strong><</strong></button>
+                </div>
+                    <section id="imgText">
+                        <img src="./imagens/cartoesPerfurados.jpg" alt="" id="imgComputer">
+                        <p id="evolutionText">No início da computação, os  computadores eram enormes, nada acessíveis ao público geral e ocupavam salas inteiras. Não haviam interfaces, todas as instruções necessárias eram feitas por cartões perfurados ou fitas magnéticas. Depois de dias, os resultados eram apresentados e caso houvesse algum erro, era necessário refazer todo o processo. </p>
+                    </section>
+                    <div class="btnHeight">
+                        <button onclick="swipeRight()" id="btnRight"><strong>></strong></button>
+                    </div>
+                </div>
+            </div>
+            <div id="slide">
+                <p class="item" style="background-color: #25022e;"></p>
+                <p class="item"></p>
+                <p class="item"></p>
+                <p class="item"></p>
+                <p class="item"></p>
+                <p class="item"></p>
+            </div>
+
+            <div id="summary">
+                <h2>Resumo</h2>
+                <p>Essa atividade consistiu na criação de uma página web explicando os fundamentos de Interação Humano-Computador(IHC) e  aprender a base do HTML.</p>
+                <h3>O que eu fiz:</h3>
+                <p>Para isso, criei uma pasta reservada para o projeto. Utilizando o VS Code, criei um arquivo e estruturei a base da página. No código, implementei tags de listas ordenadas e não ordenadas, botões, links, formatações de texto, imagens, etc. Como não houve limitação, também usei CSS e Javascript para aprimorar a página, tendo em vista que eu já tinha conhecimento prévio.</p>
+                <h3>O que foi pesquisado:</h3>
+                <p>A fim de estudar os conceitos IHC, o projeto foi elaborado por meio de pesquisas por PDFs e sites. Busquei estruturar o site com minhas próprias palavras, assegurando que aprendi os conceitos essenciais da matéria sem o uso de Inteligência Artificial.</p>
+            </div>
+
+            <div id="refs">
+                <h2>Referências</h2>
+                <a href="https://educapes.capes.gov.br/bitstream/capes/700018/2/Fasc%C3%ADculo%20%20-%20Fundamentos%20da%20Intera%C3%A7%C3%A3o%20Humano%20Computador.pdf" target="_blank">Fundamentos de Interação Humano-Computador nos processos educativos</a>
+                <a href="https://web.tecgraf.puc-rio.br/~abraposo/inf1403/INF1403_03_EngCog.pdf" target="_blank">Introdução a Interação Humano-Computador(IHC) - PUC RIO</a>
+                <a href="https://brasilead.com/wp-content/uploads/2025/11/Aula-2.pdf" target="_blank">A Evolução Humano-Computador (IHC)</a>
+                <a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" target="_blank">História e evolução dos computadores</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Anne Stefanie &copy;</p>
+            <a href="https://github.com/annestefanie" target="_blank">GitHub</a>
+            <a href="linkedin.com/in/anne-c-b11aab3aa/" target="_blank">Linkedin</a>
+        </footer>
+        
+        <script src="./script.js"></script>
+    </body>
+</html>
