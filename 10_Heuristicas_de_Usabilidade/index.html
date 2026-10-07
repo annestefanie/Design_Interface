@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Heurísticas de Usabilidade</title>
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Barra de Navegação-->
+    <!-- Barra de Navegação -->
     <section id="barraNav">
         <nav>
-                <a href="#telaInicial">INÍCIO</a>
-                <a href="#10HN">10 HN</a>
-                <a href="#divAzul">RELATÓRIO</a>
-                <a href="#sobreMimSec">SOBRE MIM</a>
-                <a href="javascript:void(0)" onclick="ocultarNav()" class="btnToggle">X</a>
+            <a href="#telaInicial">INÍCIO</a>
+            <a href="#dezHN">10 HN</a>
+            <a href="#divAzul">RELATÓRIO</a>
+            <a href="#sobreMimSec">SOBRE MIM</a>
+            <a href="javascript:void(0)" onclick="ocultarNav()" class="btnToggle">X</a>
         </nav>
     </section>
+
     <main>
-        <!--Tela Inicial-->
+        <!-- Tela Inicial -->
         <section id="telaInicial">
             <div id="titulo">
                 <h1>10</h1>
@@ -32,13 +35,16 @@
                 <h3>por Jakob Nielsen</h3>
             </div>
             <a href="#divisor">
-                <button type="button" >Começar</button>
+                <button type="button">Começar</button>
             </a>
         </section>
+
         <div id="divisor"></div>
-        <!--10 Heuríticas de Usabilidade-->
+
+        <!-- 10 Heurísticas de Usabilidade -->
         <section id="dezHN">
-            <!--1. Visibilidade e Estado do Sistema-->
+
+            <!-- 1. Visibilidade e Estado do Sistema -->
             <section id="primeira">
                 <div class="caixaTitulo">
                     <div class="contadorVerde">
@@ -48,30 +54,32 @@
                         Visibilidade do Estado do Sistema
                     </h1>
                 </div>
-                <div id="caixaTexto">
-                    <p class="paragrafo">
-                        &nbsp; 
-                        O design deve manter o usuário informado sobre o que está
-                        acontecendo no sistema. Isso ensina os usuários quais são
-                        suas principais interações e quais serão seus próximos passos.
-                        Quanto mais previsível o design for, mais confiança na
-                        marca e produto.
-                    </p>
-                    <p class="paragrafo">
-                        &nbsp;
-                        Essa visibilidade pode ocorrer continuamente (como um indicador
-                        de WI-FI) ou na forma de feedbacks, mostrando o status quando 
-                        necessário. A base desse fundamento é a confiança: os usuários 
-                        devem ter a certeza que um botão clicado, está sendo executado,
-                        de forma que mostre o que é essencial para a transparência da 
-                        experiência. <strong>Exemplo:</strong>
-                    </p>
-                </div>
-                <div id="imgLocalizacao">
-                    <img src="imagens/vizualizacao.jpg" alt="Tela de mensagem: Pagamento realizado com sucesso!" class="img">
+
+                <div class="conteudoPrimeira">
+                    <div class="textoPrimeira">
+                        <p class="paragrafo">
+                            O design deve manter o usuário informado sobre o que está
+                            acontecendo no sistema. Isso ensina os usuários quais são
+                            suas principais interações e quais serão seus próximos passos.
+                            Quanto mais previsível o design for, mais confiança na
+                            marca e produto.
+                        </p>
+                        <p class="paragrafo">
+                            Essa visibilidade pode ocorrer continuamente (como um indicador
+                            de Wi-Fi) ou na forma de feedbacks, mostrando o status quando 
+                            necessário. A base desse fundamento é a confiança: os usuários 
+                            devem ter a certeza que um botão clicado está sendo executado.
+                        </p>
+                    </div>
+
+                    <div class="imagemPrimeira">
+                        <img src="imagens/vizualizacao.jpg" alt="Tela de mensagem: Pagamento realizado com sucesso!">
+                        <span class="legenda">Exemplo: Status de pagamento em tempo real</span>
+                    </div>
                 </div>
             </section>
-            <!--2. Correspondência Entre o Sistema e o Mundo Real-->
+
+            <!-- 2. Correspondência Entre o Sistema e o Mundo Real -->
             <section id="segunda">
                 <div class="caixaTitulo">
                     <div class="contadorVerde">
@@ -81,69 +89,52 @@
                         Correspondência Entre o Sistema e o Mundo Real
                     </h1>
                 </div>
-                <div class="corpoImagem">
-                    <div id="caixaImg">
-                        <img src="imagens/corresponderaMundoReal.png" alt="">
+
+                <div class="conteudoSegunda">
+                    <div class="imagemSegunda">
+                        <img src="imagens/corresponderaMundoReal.png" alt="Correspondência com o mundo real">
+                        <span class="legenda">Exemplo: Metáforas visuais do mundo físico</span>
                     </div>
-                    <p>
+
+                    <div class="textoSegunda">
                         <p class="paragrafo">
-                            &nbsp;
-                            No mundo real já existe uma série de ideias já existentes: 
-                            ícones, imagens, palavras... e em decorrência disso, 
-                            o sistema precisa corresponder a essas ideias para garantir <strong>clareza ao usuário</strong>. 
-                            A ideia é NÃO presumir que o entendimento do usuário vai sempre coincidir com a do desenvolvedor,
-                            é buscar usar <strong>termos simples e intuitivos</strong>. <br><br>
-                            &nbsp;
-                            Por exemplo: a experiência de ler um livro. Em livros físicos, as pessoas marcam os livros,
-                            passam as páginas, colocam marca-páginas. Na experiência digital, é interessante abstrair 
-                            esses conceitos, que é o caso de leitores padrão de PDF atuais. Eles buscaram trazer essa 
-                            experiência do mundo real para a tecnolgia na forma de funcionalidades. 
+                            No mundo real já existe uma série de conceitos e objetos consolidados: 
+                            ícones, metas visuais, símbolos e palavras. O sistema precisa corresponder a essas 
+                            ideias para garantir <strong>clareza e previsibilidade ao usuário</strong>.
                         </p>
                         <p class="paragrafo">
-                            
+                            A ideia principal é <strong>nunca presumir</strong> que o entendimento do usuário coincide com o do desenvolvedor. Deve-se priorizar o uso de <strong>termos simples, intuitivos e familiares</strong>.
                         </p>
-                    </p>
+                        <p class="paragrafo destaque">
+                            <strong>Exemplo do cotidiano:</strong> A experiência de ler um livro. Em livros físicos, as pessoas marcam páginas e usam marcadores. Na experiência digital, leitores de PDF abstraem esses exatos conceitos para criar familiaridade instantânea.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Slide Infinito de Ícones -->
                 <div class="slide">
-                    <div class="slideIcones">
-                        <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Icone de Câmera">
-                        <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Icone de Imagem">
-                    </div>
-                    <div class="slideIcones">
-                        <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Icone de Câmera">
-                        <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Icone de Imagem">
-                    </div>
-                    <div class="slideIcones">
-                        <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Icone de Câmera">
-                        <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Icone de Imagem">
-                    </div>
-                    <div class="slideIcones">
-                        <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Icone de Câmera">
-                        <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Icone de Imagem">
-                    </div>
-                    <div class="slideIcones">
-                        <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Icone de Câmera">
-                        <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Icone de Imagem">
-                    </div>
-                    <div class="slideIcones">
-                        <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Icone de Câmera">
-                        <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Icone de Imagem">
-                    </div>
-                    <div class="slideIcones">
-                        <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Icone de Câmera">
-                        <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Icone de Imagem">
-                    </div>
-                    <div class="slideIcones">
-                        <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Icone de Câmera">
-                        <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Icone de Imagem">
-                    </div>
-                    <div class="slideIcones">
-                        <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Icone de Câmera">
-                        <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Icone de Imagem">
+                    <div class="slideTrack">
+                        <div class="slideGrupo">
+                            <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Ícone de Câmera">
+                            <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Ícone de Imagem">
+                            <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Ícone de Câmera">
+                            <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Ícone de Imagem">
+                            <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Ícone de Câmera">
+                            <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Ícone de Imagem">
+                        </div>
+                        <div class="slideGrupo">
+                            <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Ícone de Câmera">
+                            <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Ícone de Imagem">
+                            <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Ícone de Câmera">
+                            <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Ícone de Imagem">
+                            <img src="imagens/Camera--Streamline-Guidance-Free.svg" alt="Ícone de Câmera">
+                            <img src="imagens/Image--Streamline-Guidance-Free.svg" alt="Ícone de Imagem">
+                        </div>
                     </div>
                 </div>
             </section>
-            <!--3. Controle de Usuário e Liberdade-->
+
+            <!-- 3. Controle de Usuário e Liberdade -->
             <section id="terceira">
                 <div class="caixaTitulo">
                     <div class="contadorVerde">
@@ -153,145 +144,164 @@
                         Controle de Usuário e Liberdade
                     </h1>
                 </div>
-                <p>
-                    <p class="paragrafo">
-                        &nbsp;
-                        Os usuários assim como todos, cometem erros. É por causa disso, que devem ter a possibilidade de refazer, voltar 
-                        ou cancelar visivelmente. <strong>Por que isso é importante?</strong> Porque dá a liberdade para o usuário clicar em um link,
-                        por exemplo, sem medo de não ter a possibilidade de voltar para a página anterior. Isso dá mais LIBERDADE para 
-                        explorar sua aplicação. <br> <br>
-                        &nbsp;
-                        A resposta de um teste interessante feito recentemente, conclui que muitos usuários ao depararem-se com uma tela em
-                        sobreposição tendem a usar o botão de voltar ao invés do botão de fechar. Por isso é importante que as aplicações
-                        tenham suporte para atingir o mesmo efeito em diferentes tipos de ações.
-                    </p>
+                <p class="paragrafo">
+                    Os usuários assim como todos, cometem erros. É por causa disso, que devem ter a possibilidade de refazer, voltar 
+                    ou cancelar visivelmente. <strong>Por que isso é importante?</strong> Porque dá a liberdade para o usuário clicar em um link,
+                    por exemplo, sem medo de não ter a possibilidade de voltar para a página anterior. Isso dá mais LIBERDADE para 
+                    explorar sua aplicação. <br><br>
+                    A resposta de um teste interessante feito recentemente, conclui que muitos usuários ao depararem-se com uma tela em
+                    sobreposição tendem a usar o botão de voltar ao invés do botão de fechar. Por isso é importante que as aplicações
+                    tenham suporte para atingir o mesmo efeito em diferentes tipos de ações.
                 </p>
             </section>
-            <!--4. Consistência e Padrões-->
+
+            <!-- 4. Consistência e Padrões -->
             <section id="quarta">
-                <div class="fundoPontilhado">
-                    <img src="imagens/fundoPontilhado.jpg" alt="">
-                </div>
                 <div class="caixaTitulo">
                     <div class="contadorPreto">
                         <p>4</p>
                     </div>
-                    <h1 class="subtituloCursivo">
-                        Consistência e Padrões
-                    </h1>
+                    <h1 class="subtituloCursivo">Consistência e Padrões</h1>
                 </div>
-                <p>
-                    <p class="paragrafo">
-                        &nbsp;
-                        Mantenha o padrão já estabelecido. Usuários não deveriam ter que se perguntar se palavras diferentes
-                        , situações, ou ações significam a mesma coisa. Padronize sua aplicação a ponto de não haver dúvidas, 
-                        tanto internamente, quanto externamente. Isso é algo percebido em diversas aplicações: Word, PowerPoint,
-                        Bizagi, Docs, possuem consistência na aba de ferramentas. Dessa forma, é mais fácil de aprender e mais 
-                        familiar para o usuário. <br> <br>
-                        &nbsp;
-                        Existem várias camadas de consistência:
-                        <ul class="paragrafo">
-                            <li>Visual;</li>
-                            <li>Layout de página e botão;</li>
-                            <li>Entrada de dados de usuário;</li>
-                            <li>Conteúdo.</li>
-                        </ul>
+
+                <div class="cartaoGenerico">
+                    <p class="paragrafo textoIntroducao">
+                        Mantenha padrões consolidados no sistema. Os usuários não devem ter que adivinhar se palavras, elementos ou ações diferentes significam a mesma coisa.
                     </p>
-                </p>
-            </section>
-            <!--5. Prevenção de Erros-->
-            <section id="quinta">
-                <div class="fundoPontilhado">
-                    <img src="imagens/fundoPontilhado.jpg" alt="">
+
+                    <!-- Grid de Pilares de Consistência -->
+                    <div class="gridPadrões">
+                        <div class="cardPilar">
+                            <div class="iconePilar"><i class="fa-solid fa-palette"></i></div>
+                            <h3>Visual</h3>
+                            <p>Cores, tipografia e hierarquia constantes em todas as telas.</p>
+                        </div>
+                        <div class="cardPilar">
+                            <div class="iconePilar"><i class="fa-solid fa-ruler-combined"></i></div>
+                            <h3>Layout</h3>
+                            <p>Posicionamento padronizado de botões, menus e navegação.</p>
+                        </div>
+                        <div class="cardPilar">
+                            <div class="iconePilar"><i class="fa-solid fa-keyboard"></i></div>
+                            <h3>Entrada de Dados</h3>
+                            <p>Formulários e seletores com comportamentos previsíveis.</p>
+                        </div>
+                        <div class="cardPilar">
+                            <div class="iconePilar"><i class="fa-solid fa-pen-nib"></i></div>
+                            <h3>Conteúdo</h3>
+                            <p>Tom de voz, terminologias e rótulos uniformes.</p>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <!-- 5. Prevenção de Erros -->
+            <section id="quinta">
                 <div class="caixaTitulo">
                     <div class="contadorPreto">
                         <p>5</p>
                     </div>
-                    <h1 class="subtituloCursivo">
-                        Prevenção de Erros
-                    </h1>
+                    <h1 class="subtituloCursivo">Prevenção de Erros</h1>
                 </div>
-                <p>
-                    <p class="paragrafo">
-                        &nbsp;
-                        Um bom sistema vai ajudar a previnir erros de acontecerem. Mensagens de confirmação são uma boa 
-                        maneira de fazer isso. Prover bons avisos e orientações para o usuário faz grande diferenças, 
-                        assim como alterar layouts ou pequenas coisas para evitar frustrações.
+
+                <div class="cartaoGenerico">
+                    <p class="paragrafo textoIntroducao">
+                        Melhor do que uma boa mensagem de erro é um design cuidadoso que evita que o problema aconteça. Elimine condições propensas a erros ou peça confirmação antes de ações críticas.
                     </p>
-                </p>
+
+                    <!-- Componente Visual de Alerta/Confirmação -->
+                    <div class="caixaConfirmacaoExemplo">
+                        <div class="cabecalhoAlerta">
+                            <span class="iconeAlerta"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                            <strong>Confirmação de Ação Crítica</strong>
+                        </div>
+                        <p class="textoAlerta">
+                            Tem certeza de que deseja excluir permanentemente este arquivo? Esta ação não poderá ser desfeita.
+                        </p>
+                        <div class="botoesAlerta">
+                            <button type="button" class="btnCancelar">Cancelar</button>
+                            <button type="button" class="btnExcluir">Sim, excluir</button>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <!--6. Reconhecimento em vez de Recordação-->
+
             <section id="sexta">
                 <div class="caixaTitulo">
                     <div class="contadorPreto">
                         <p>6</p>
                     </div>
-                    <h1 class="subtituloCursivo">
-                        Reconhecimento em vez de Recordação
-                    </h1>
+                    <h1 class="subtituloCursivo">Reconhecimento em vez de Recordação</h1>
                 </div>
-                <p>
-                    <p class="paragrafo"> 
-                        &nbsp;
-                        O usuário não vai lembrar de tudo quando estiver navegando na sua página, seu design deve prever isso.
-                        É importante a repetição de informações, ou até a diminuição das quais o usuário esteja responsável por
-                        lembrá-las. Um exercicío inteligente é pensar em que tipos de perguntas você está fazendo para o usuário:
-                        perguntas amplas e complexas (quais, como) ou perguntas simples (sim ou não).
+
+                <div class="cartaoGenerico">
+                    <p class="paragrafo textoIntroducao">
+                        Minimize a carga de memória do usuário tornando elementos, ações e opções visíveis. O usuário não deve ter que se lembrar de informações de uma parte da interface para outra.
                     </p>
-                </p>
+
+                    <!-- Exemplo Visual: Busca com Histórico/Sugestões -->
+                    <div class="caixaReconhecimento">
+                        <div class="campoBuscaMock">
+                            <span class="iconeLupa"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="textoDigitado">Camiseta preta...</span>
+                        </div>
+                        <div class="menuSugestõesMock">
+                            <span class="tituloSugestao">Recentes e Sugestões:</span>
+                            <ul>
+                                <li><i class="fa-regular fa-clock"></i> Camiseta preta algodão <strong>(Busca recente)</strong></li>
+                                <li><i class="fa-solid fa-bag-shopping"></i> Camiseta preta oversized <strong>(Em alta)</strong></li>
+                                <li><i class="fa-solid fa-tag"></i> Ver na categoria: <em>Roupas Masculinas</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <!--7. Flexibilidade e Eficiência de Uso-->
+
+            <!-- 7. Flexibilidade e Eficiência de Uso -->
             <section id="setima">
                 <div class="caixaTitulo">
                     <div class="contadorAzul">
                         <p>7</p>
                     </div>
                     <h1 class="subtituloForma">
-                        <strong>FLEXIBILIDADE </strong> E
-                        <strong>EFICIÊNCIA </strong> DE USO
+                        <strong>FLEXIBILIDADE</strong> E <strong>EFICIÊNCIA</strong> DE USO
                     </h1>
                 </div>
                 <div class="corpoImagem">
-                    <p>
-                        <p class="paragrafo">
-                            &nbsp;
-                            Partindo do princípio que existem usuários mais experientes que outros, é notável que um bom UX vai buscar
-                            atender todos os públicos. Esse princípio conta sobre a capacidade de fazer novos caminhos para executar uma
-                            mesma ação, atalhos. Além disso, é interessante a adição de funcionalidades de customização, as quais permite
-                            o indivíduo usar a aplicação como melhor deseja. Essa personalização do usuário não deve partir apenas dele
-                            mesmo, escolhendo maneiras de utilizar a interface, mas também do sistema por trás. Ele deve trazer recomedações
-                            Um exemplo muito comum desses conceitos é copiar um texto: pessoas podem usar tanto Ctrl + C, quanto botão 
-                            esquerdo do mouse + copiar. Ou até as curtidas do Instagram, que podem ser executadas por meio de um botão 
-                            ou dois cliques.
-                        </p>
+                    <p class="paragrafo">
+                        Partindo do princípio que existem usuários mais experientes que outros, é notável que um bom UX vai buscar
+                        atender todos os públicos. Esse princípio conta sobre a capacidade de fazer novos caminhos para executar uma
+                        mesma ação, atalhos. Além disso, é interessante a adição de funcionalidades de customização, as quais permite
+                        o indivíduo usar a aplicação como melhor deseja. Essa personalização do usuário não deve partir apenas dele
+                        mesmo, escolhendo maneiras de utilizar a interface, mas também do sistema por trás. Ele deve trazer recomendações.
+                        Um exemplo muito comum desses conceitos é copiar um texto: pessoas podem usar tanto Ctrl + C, quanto botão 
+                        esquerdo do mouse + copiar. Ou até as curtidas do Instagram, que podem ser executadas por meio de um botão 
+                        ou dois cliques.
                     </p>
                     <div>
-                        <img src="imagens/best-app-to-get-instagram-like.jpg" alt="" class="img">
+                        <img src="imagens/best-app-to-get-instagram-like.jpg" alt="Exemplo de Curtidas no Instagram" class="img">
                     </div>
                 </div>
             </section>
-            <!--8. Design Estético e Minimalista-->
+
+            <!-- 8. Design Estético e Minimalista -->
             <section id="oitava">
                 <div class="caixaTitulo">
                     <div class="contadorAzul">
                         <p>8</p>
                     </div>
                     <h1 class="subtituloForma">
-                        Design <strong>Estético</strong> e 
-                        <strong>Minimalista</strong>
+                        Design <strong>Estético</strong> e <strong>Minimalista</strong>
                     </h1>
                 </div>
-                <p>
-                    <p class="paragrafo">
-                        &nbsp;
-                        Certifique-se que sua interface não contém informações desnecessárias, gerando poluição visual e confusão
-                        para o usuário. Priorize os cotenteúdos e recursos: algo que não é muito usado ou não alinha com os objetivos
-                        empresáriais, remova.
-                    </p>
+                <p class="paragrafo">
+                    Certifique-se que sua interface não contém informações desnecessárias, gerando poluição visual e confusão
+                    para o usuário. Priorize os conteúdos e recursos: algo que não é muito usado ou não alinha com os objetivos
+                    empresariais, remova.
                 </p>
             </section>
-            <!--9. Ajudar os usuários a Reconhecer, Diagnosticar e Recuperar Erros-->
+
+            <!-- 9. Ajudar os usuários a Reconhecer, Diagnosticar e Recuperar Erros -->
             <section id="nona">
                 <div class="caixaTitulo">
                     <div class="contadorAzul">
@@ -306,36 +316,32 @@
                 </div>
                 <div id="quadro">
                     <p class="paragrafo">
-                        &nbsp;
                         Mensagens de erro devem ajudar a guiar o indivíduo. Quando são demasiadamente genéricas ou não claras, dificilmente
                         terão um efeito educativo. Sinais visuais, como cores, fontes e linguagem cotidiana são elementos que irão agilizar
                         a solução do problema.
                     </p>
                 </div>
             </section>
-            <!--10. Ajuda e Documentação-->
+
+            <!-- 10. Ajuda e Documentação -->
             <section id="decima">
                 <div class="caixaTitulo">
                     <div class="contadorAzul">
                         <p>10</p>
                     </div>
                     <h1 class="subtituloForma">
-                        <strong>Ajuda </strong>e 
-                        <strong>documentação</strong>
+                        <strong>Ajuda</strong> e <strong>documentação</strong>
                     </h1>
                 </div>
-                <p>
-                    <p class="paragrafo">
-                        &nbsp;
-                        Apesar de uma interface ter que ser intuitiva, a documentação ainda é necessária e saber utilizá-la também. Ela deve 
-                        estar presente em momentos específicos e que provavelmente alguns vão precisar. Obrigatoriamente, deve ser de fácil 
-                        acesso entre o sistema também, de maneira objetiva, com passo-a-passo.
-                    </p>
+                <p class="paragrafo">
+                    Apesar de uma interface ter que ser intuitiva, a documentação ainda é necessária e saber utilizá-la também. Ela deve 
+                    estar presente em momentos específicos e que provavelmente alguns vão precisar. Obrigatoriamente, deve ser de fácil 
+                    acesso entre o sistema também, de maneira objetiva, com passo-a-passo.
                 </p>
-
             </section>
         </section>
-        <!--Relatório-->
+
+        <!-- Relatório -->
         <section>
             <div>
                 <div class="divCinza"></div>
@@ -348,30 +354,28 @@
                         Relatório
                     </h1>
                 </div>
-                <p>
-                    <p class="paragrafo">
-                        &nbsp;
-                        Essa é uma interface desenolvida para a disciplina Desenvolvimento de Interfaces no CEUB. A tarefa tem por objetivo a elaboração 
-                        de uma interface web focada nos conceitos de Jakob Nielsen, os quais foram usados e aprendidos durante o processo de confecção. 
-                        Além disso, busca aprender num formato de aula invertida o uso do CSS. Nessa atividade busquei melhorar meus designs, soltando a 
-                        criatividade por meio de uma ferramenta de design (Canva) para a prototipação e posterior codificação. Dos novos conceitos que eu 
-                        aprendi foram: uso de transições, gradientes, imagens de fundo, slide de ícones, criação de variáveis em CSS, etc. 
-                    </p>
-                    <p class="paragrafo">
-                        Referências Utilizadas:
-                    </p>
-                    <p class="paragrafo">
-                        <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" class="a">10 Heurísticas de Usabilidade</a> <br>
-                        <a href="https://youtu.be/nAjR0Oj0J8E?si=Aa7XzbuJwCjNHmTL" class="a">Como criar o slide de ícones;</a> <br>
-                        <a href="https://www.streamlinehq.com/icons/guidance?ref=Awwwards&utm_source=awwwards-honors&utm_medium=partner&utm_campaign=guidance-elegant-wayfinding-icons&tab=all" class="a">Ícones gratuitos;</a> <br>
-                        <a href="https://fonts.google.com/" class="a">Fontes Google;</a> <br>
-                        <a href="https://developer.amazon.com/en-US/alexa/branding/echo-guidelines/identity-guidelines/typography" class="a">Fontes Amazon;</a> <br>
-                        Além de conhecimentos <strong>prévios</strong> adquiridos no desenvolvimento de projetos, vídeos no Youtube e pesquisas.
-                    </p>
+                <p class="paragrafo">
+                    Essa é uma interface desenvolvida para a disciplina Desenvolvimento de Interfaces no CEUB. A tarefa tem por objetivo a elaboração 
+                    de uma interface web focada nos conceitos de Jakob Nielsen, os quais foram usados e aprendidos durante o processo de confecção. 
+                    Além disso, busca aprender num formato de aula invertida o uso do CSS. Nessa atividade busquei melhorar meus designs, soltando a 
+                    criatividade por meio de uma ferramenta de design (Canva) para a prototipação e posterior codificação. Dos novos conceitos que eu 
+                    aprendi foram: uso de transições, gradientes, imagens de fundo, slide de ícones, criação de variáveis em CSS, etc. 
+                </p>
+                <p class="paragrafo">
+                    Referências Utilizadas:
+                </p>
+                <p class="paragrafo">
+                    <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" class="a" target="_blank">10 Heurísticas de Usabilidade</a><br>
+                    <a href="https://youtu.be/nAjR0Oj0J8E?si=Aa7XzbuJwCjNHmTL" class="a" target="_blank">Como criar o slide de ícones</a><br>
+                    <a href="https://www.streamlinehq.com/icons/guidance" class="a" target="_blank">Ícones gratuitos</a><br>
+                    <a href="https://fonts.google.com/" class="a" target="_blank">Fontes Google</a><br>
+                    <a href="https://developer.amazon.com/en-US/alexa/branding/echo-guidelines/identity-guidelines/typography" class="a" target="_blank">Fontes Amazon</a><br>
+                    Além de conhecimentos <strong>prévios</strong> adquiridos no desenvolvimento de projetos, vídeos no Youtube e pesquisas.
                 </p>
             </div>
         </section>
-        <!--Sobre Mim-->
+
+        <!-- Sobre Mim -->
         <section id="sobreMimSec">
             <div class="divVerde"></div>
             <div id="sobreMimDiv">
@@ -380,24 +384,25 @@
                         Sobre Mim
                     </h1>
                 </div>
-                <p class="paragrafo"> <br>
-                    &nbsp;
-                     Eu me chamo Anne, futura desenvolvedora Fullstack focando na cosntrução da base dos conhecimentos fundamentais: lógica de programação, servidores, dados, design de interface e bibliotecas correlatas, redes, cibersegurança, IA,
-                     Cloud Computing, etc. Gosto muito de áreas que envolvem lógica e essa é uma área que me interessa porque se mistura com outro interesse meu: a arte. Quero melhorar meus conhecimentos técnicos e colaborativos para me tornar 
-                     uma profissional completa para o mercado de trabalho. Me acompanhe: <br>
-                    </div>
+                <p class="paragrafo">
+                    Eu me chamo Anne, futura desenvolvedora Fullstack focando na construção da base dos conhecimentos fundamentais: lógica de programação, servidores, dados, design de interface e bibliotecas correlatas, redes, cibersegurança, IA,
+                    Cloud Computing, etc. Gosto muito de áreas que envolvem lógica e essa é uma área que me interessa porque se mistura com outro interesse meu: a arte. Quero melhorar meus conhecimentos técnicos e colaborativos para me tornar 
+                    uma profissional completa para o mercado de trabalho. Me acompanhe:
                 </p>
-                </section>
-            </main>
-            <footer>
-            &copy 2026 | Anne Cruz <br>
-            <a href="https://github.com/annestefanie">
-               <img src="imagens/github (1).png" alt="">
-            </a>
-            <a href="https://www.linkedin.com/in/anne-c-b11aab3aa/">
-               <img src="imagens/linkedin.png" alt="">
-            </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 | Anne Cruz <br>
+        <a href="https://github.com/annestefanie" target="_blank">
+            <img src="imagens/github (1).png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/anne-c-b11aab3aa/" target="_blank">
+            <img src="imagens/linkedin.png" alt="LinkedIn">
+        </a>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,36 +1,41 @@
-let barraNav = document.querySelector('nav')
-let btnToggle = document.querySelector('.btnToggle')
+document.addEventListener("DOMContentLoaded", () => {
+    const slideTrack = document.querySelector('.slideTrack');
+    const slide = document.querySelector('.slide');
 
-function ocultarNav(){
-    barraNav.classList.toggle = 'recolhida'  
-    barraNav.style.paddingLeft = '1rem'  
-}
-function abrir10HN(){
-    addEventListener('click', () => {
-    const opcoesHN = document.createElement('div')
-    opcoesHN.id = 'opcoesHN'
-    opcoesHN.classList.toggle = 'fechada'
+    if (!slideTrack || !slide) return;
 
-    const umHN = document.createElement('a');
-    const doisHN = document.createElement('a');
-    const tresHN = document.createElement('a');
-    const quatroHN = document.createElement('a');
-    const cincoHN = document.createElement('a');
-    const seisHN = document.createElement('a');
-    const seteHN = document.createElement('a');
-    const oitoHN = document.createElement('a');
-    const noveHN = document.createElement('a');
-    const dezHN = document.createElement('a');
+    let posicao = 0;
+    const velocidade = 1; // Ajuste a velocidade aqui (ex: 0.5 para mais lento, 2 para mais rápido)
+    let emPausa = false;
 
-    const botoesHN = [] = [umHN, doisHN, tresHN, quatroHN, cincoHN, seisHN, seteHN, oitoHN, noveHN, dezHN]
-    
-    for(let i = 0; i < 10; i++){
-        botoesHN[i].classList.add = 'botoesHN'
-        botoesHN[i].innerHTML = `${botoesHN[i].textContent}`
-        barraNav.appendChild(botoesHN[i])
+    // Duplica o conteúdo para garantir loop infinito contínuo
+    const grupoOriginal = slideTrack.querySelector('.slideGrupo');
+    if (grupoOriginal && slideTrack.children.length === 1) {
+        const clonado = grupoOriginal.cloneNode(true);
+        slideTrack.appendChild(clonado);
     }
-    
-    barraNav.appendChild(opcoesHN)
 
-    })
-}
+    function animarSlide() {
+        if (!emPausa) {
+            posicao -= velocidade;
+
+            // Largura de metade do track (um grupo de imagens)
+            const metadeLargura = slideTrack.scrollWidth / 2;
+
+            // Reseta a posição quando metade das imagens saírem da tela
+            if (Math.abs(posicao) >= metadeLargura) {
+                posicao = 0;
+            }
+
+            slideTrack.style.transform = `translateX(${posicao}px)`;
+        }
+        requestAnimationFrame(animarSlide);
+    }
+
+    // Pausa ao passar o mouse (Hover)
+    slide.addEventListener('mouseenter', () => emPausa = true);
+    slide.addEventListener('mouseleave', () => emPausa = false);
+
+    // Inicia a animação
+    animarSlide();
+});
