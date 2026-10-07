@@ -118,4 +118,5 @@ span:hover{
 }
 footer{
     padding: 3rem;
+    color: var(--p-color-2);
 }
