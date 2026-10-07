@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face{
+    font-family: 'dreaming-outloud-sans';
+    src: url('fontes/dreaming-outloud-regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Brittany Signature';
+    src: url(fontes/BrittanySignature.ttf) format('truetype');
+}
+:hover{
+    transition: ease-in-out 0.3s;
+}
+:root {
+    --bg-section: #ffff;
+    --border: #000000;
+    --text-primary: #000000;
+    --text-secundary: #265045;
+    --text-muted: #ffff;
+    --bg-nav: #6ad6b9;
+    --bg-btn: #000000;
+    --bg-btn-hover: #161616;
+    --bg-div-grey: #f3f3f3;
+    --bg-div-green: #265045;
+    --grad-blue: #6ad6b991;
+    --bg-div-black: #000000;
+}
+[data-theme="preto"]{
+    --bg-section: #000000;
+    --text-primary: #ffff;
+}
+[data-theme="turquesa"]{
+    --bg-section: #6ad6b9;
+    --text-primary: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 100%;
+}
+#barraNav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+nav{
+    position: fixed;
+    top: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: clamp(300px, 80vw, 1000px);
+    padding: 1rem;
+    background-color: var(--bg-nav);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0px 0px 20px 20px;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+nav.recolhida a:not(.btnToggle){
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+}
+#opcoesHN{
+    height: 10vh;
+    width: 10vw;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+a, button{
+    cursor: pointer;
+    text-decoration: none;
+}
+#barraNav a{
+    font-family: 'dreaming-outloud-sans', sans-serif;
+    color: var(--text-primary);
+}
+#barraNav a:hover{
+    color: var(--text-secundary);
+    text-decoration: underline var(--text-secundary) 1px;
+}
+#telaInicial{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#telaInicial::before{
+    background-color: var(--grad-blue);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.822) 100%), url('imagens/graph-paper-grid-lines-free-png.webp');
+    opacity: 0.3; 
+    background-repeat: repeat;
+    background-size: 300px;
+    background-position: top left;
+    z-index: -1;
+}
+#telaInicial h1, h3{
+    font-family: 'Brittany Signature';
+}
+#telaInicial h2 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: lighter;
+}
+#autor{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+#autor h3{
+    color: var(--text-secundary);
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-right: 4rem;
+}
+#telaInicial button{
+    padding: 6px 70px 6px 70px;
+    border-radius: 20px;
+    background-color: var(--bg-btn);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-family: 'dreaming-outloud-sans', sans-serif;
+    font-size: 1rem;
+    margin-top: 80px;
+}
+#telaInicial button:hover{
+    background-color: var(--bg-btn-hover);
+}
+#titulo{
+    padding-top: 10rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#titulo h1{
+    font-size: 15rem;
+    line-height: 0.8;
+    font-weight: 100;
+    transform: rotate(-12deg) ;
+}
+#titulo h2 strong{
+    font-weight: 600;
+}
+#heuristicas{
+    font-size: 3.5rem;
+    line-height: 0.7;
+}
+#usabilidade{
+    font-size: 3.35rem;
+}
+#sublinhado{
+    background-color: var(--border);
+    height: 2.5px;
+    border-radius: 10px;
+    transform: rotate(0.5deg);
+    animation: sublinhar 1s forwards ease-in-out;
+    
+}
+@keyframes sublinhar{
+    from{
+        width: 0rem;
+    }
+    to{
+        width: 100%;
+    }
+}
+#divisor{
+    height: 1.5px;
+    background-color: var(--border);
+    margin: 0px 0px 20px 0px;
+}
+#dezHN{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#primeira{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.caixaTitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.contadorVerde{
+    background-color: var(--bg-div-green);
+    border-radius: 20px;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+.contadorVerde p{
+    font-family: 'Brittany Signature';
+    font-weight: lighter;
+    line-height: 0.2;
+    color: var(--text-muted);
+    width: 100%;
+    align-items: center;
+}
+.subtituloCursivo{
+    font-family: 'Brittany Signature';
+    font-weight: normal;
+}
+#caixaTexto{
+    position: relative;
+    height: 40vh;
+    width: clamp(200px, 70vw, 1000px);
+    border-radius: 30px;
+    background-color: var(--bg-div-grey);
+    overflow: hidden;
+    padding-top: 2vh;
+    
+}
+#caixaTexto::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10;
+    border-radius: 25px;
+    width: 70vw;
+    height: 42vh;
+    background: linear-gradient(180deg, white 1%, black 350%);
+    z-index: 1;
+}
+#caixaTexto p{
+    padding: 1.5rem 1.5rem .5rem 1.5rem;
+}
+.paragrafo{
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 1rem;
+    text-align: justify;
+    position: relative;
+    z-index: 2;
+}
+#imgLocalizacao{
+    position: absolute;
+    top: 43vh;
+    max-width: 50vw;
+    z-index: 2;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 4px 4px var(--bg-div-green);
+}
+#imgLocalizacao img{
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    object-fit:cover;
+}
+.img, #imgLocalizacao{
+    transition: all .5s ease-in-out;
+}
+#imgLocalizacao:hover, .img:hover{
+    transform: scale(1.05) translateY(-5px) translateX(-5px);
+}
+#segunda{
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: center;
+}
+#caixaImg{
+    width: clamp(10rem, 10vw, 10rem);
+    height: 70vh;
+}
+#caixaImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#caixaImg::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    height: 0;
+    background-image: linear-gradient(90deg black, white);
+    z-index: 2;
+}
+.corpoImagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.corpoImagem p{
+    max-width: 70%;
+}
+@keyframes slide{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.slide{
+    margin-top: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.slide img{
+    height: 70px;
+    padding: .7rem;
+}
+.slideIcones{
+    display: inline-flex;
+    animation: 5s slide infinite linear;
+}
+#terceira{
+    margin-top: 1rem;
+    background-color: var(--bg-div-black);
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#terceira h1{
+    color: var(--text-muted);
+}
+#terceira p {
+    color: var(--text-muted);
+    max-width: 80%;
+}
+.fundoPontilhado{
+    position: absolute;
+    z-index: -1;
+    opacity: 50%;
+}
+.fundoPontilhado img{
+    width: 100%;
+}
+.contadorPreto{
+    background-color: var(--bg-btn);
+    max-width: 30px;
+    max-height: 30px;
+    padding: .5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contadorPreto p{
+    color: var(--text-muted);
+    font-family: 'Atkinson Hyperlegible';
+}
+#quarta p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#quarta .caixaTitulo, #quinta .caixaTitulo, #sexta .caixaTitulo{
+   margin-top: 2rem;
+   margin-bottom: .5rem;
+   justify-content: start;
+   padding-left: 2rem;
+}
+ul {
+    width: 100%;
+    align-items: flex-start;
+}
+li{
+    padding-left: 4rem;
+    list-style: none;
+}
+#quinta p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#sexta p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 30px;
+}
+#sexta{
+    margin-bottom: 20px;
+}
+.contadorAzul{
+    background-color: var(--bg-nav);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+}
+.contadorAzul p{
+    font-family: 'Atkinson Hyperlegible';
+    color: var(--text-primary);
+    width: 100%;
+}
+.subtituloForma{
+    font-family: 'Atkinson Hyperlegible';
+    font-weight: 100;
+}
+.subtituloForma strong{
+    font-weight: 600;
+}
+.caixaTitulo .subtituloForma{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+#setima {
+    align-items: center;
+}
+#setima .paragrafo{
+    max-width: 60%;
+}
+#setima .corpoImagem{
+    padding: 1rem;
+}
+#setima img{
+    border-radius: 1000px;
+    width: clamp(100px, 50vw, 300px);
+    height: clamp(100px, 50vh, 300px);
+    object-fit: cover;
+    border: 1px solid var(--border);
+    box-shadow: 0px 0 100px var(--grad-blue);
+}
+#setima::before{
+    background-color: var(--bg-div-grey);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, var(--grad-blue), var(--bg-div-grey) 50%);
+    z-index: -1;
+}
+.a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.a:hover{
+    color: var(--text-secundary);
+}
+#oitava{
+    background-color: var(--bg-section);
+}
+#oitava .paragrafo, #nona .paragrafo, #decima .paragrafo{
+    padding: 1rem;
+}
+#nona {
+    background-color: var(--bg-section);
+}
+#nona, #decima, #oitava, #relatorio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#quadro{
+    background-color: var(--bg-div-grey);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    max-width: 60%;
+    box-shadow: 10px 10px var(--bg-div-green);
+}
+#decima {
+    margin-top: 30px;
+}
+#decima p, #oitava p{
+    max-width: 60%;
+}
+.divCinza {
+    margin-top: 30px;
+    height: 7vw;
+    background-color: var(--bg-div-grey);
+}
+#divAzul{
+    height: 5vw;
+    background-color: var(--bg-nav);
+}
+.divVerde{
+    height: 3vh;
+    background-color: var(--bg-div-green);
+}
+#relatorio{
+    padding: 2rem;
+    background-color: var(--bg-div-black);
+    color: var(--text-muted);
+}
+#relatorio p{
+    margin-top: 10px;
+    max-width: 60%;
+}
+#relatorio a{
+    color: var(--text-secundary);
+}
+#relatorio .a:hover{
+    color: var(--text-muted);
+}
+#sobreMimSec .divVerde{
+    height: 6vh;
+}
+#sobreMimDiv {
+    background-color: var(--bg-nav);
+    padding: 2rem;
+}
+footer img{
+    max-width: 30px;
+}
+footer{
+    text-align: center;
+    align-items: center;
+    background-color: var(--bg-section);
+    padding: 2rem;
+    font-family: 'Atkinson Hyperlegible';
+}
+    @media (max-width: 768px) {
+
+        main{
+            padding-left: .2rem;
+            padding-right: .2rem;
+        }
+        #titulo {
+            padding-top: 5rem;
+        }
+        #titulo h1{
+            font-size: 9rem;
+        }
+        #heuristicas{
+            font-size: 2.5rem;
+        }
+        #usabilidade{
+            font-size: 2.1rem;
+        }
+        #autor h3{
+            font-size: 1.5rem;
+        }
+        #caixaTexto{
+            height: 60vh;
+        }
+        #caixaTexto::before{
+            height: 60vh;
+        }
+        #imgLocalizacao{
+            top: 60vh;
+        }
+        .caixaTitulo{
+            width: 100%;
+        }
+        .subtituloCursivo{
+            font-size: 1.5rem;
+        }
+        #caixaImg{
+            width: clamp(5rem, 5vw, 5rem);
+            height: 40vh;
+        }
+        .corpoImagem{
+            flex-direction: column;
+        }
+        .paragrafo{
+            font-size: 1rem;
+        }
+        #segunda {
+            margin-top: 10rem;
+        }
+        #nona h1{
+            font-size: 1.2rem;
+        }
+        
+    }
